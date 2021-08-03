@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+    <link rel="stylesheet" href="homeworks.css">
+</head>
+<body>
+	<script>
+		"use strict";
+		// Первое задание
+		let tc = 36;
+		let tf = (9 / 5) * tc + 32;
+		alert(tf);
+
+        // Второе задание
+        let name = "Василий";
+        let admin = name;
+        alert(admin)
+
+        // Третее задание
+        let firt = 10 + 10 + "10";
+        let second = 10 + "10" + 10;
+        let third = 10 + 10 + +"10";
+        let fourth = 10 / -"";
+        let fifth = 10 / +"2,5"; 
+
+        console.log(firt);
+        console.log(second);
+        console.log(third);
+        console.log(fourth);
+        console.log(fifth);
+
+        /*
+        1. Результат - 2010. Числовые данные сложились в число 20, а потом произошла конкатенация со строкой "10".
+        2. Результат - 101010. Числовые данные не сложились, потому что между ними строка. Произошла конкатенация всех данных. 
+        3. Результат - 30. Унарный плюс превратил строку в число, и все данные сложились.
+        4. Результат - -Infinity. Делим число на ноль и получаем Infinity, унарный минус превратил Infinity в -Infinity.
+        5. Результат - NaN. Мы не можем разделить число на строку, получаем ошибку.
+        */
+
+	</script>
+</body>
+</html>
