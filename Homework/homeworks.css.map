@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,eAAU;EACR,EAAE;IACA,UAAU,EAAE,OAAO;;EAErB,GAAG;IACD,UAAU,EAAE,OAAO;;EAErB,IAAI;IACF,UAAU,EAAE,OAAO;;;;AAGvB,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,iDAAiD;CAAG",
+    "sources": [
+        "homeworks.sass"
+    ],
+    "names": [],
+    "file": "homeworks.css"
+}
