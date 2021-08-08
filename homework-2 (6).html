@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+    <link rel="stylesheet" href="homeworks.css">
+</head>
+<body>
+	<script>
+		"use strict";
+		
+        let amount = prompt("Введите сумму которую вы хотите зачислить на счет");
+
+        let amount_last = amount.charAt(amount.length - 1 );
+        
+        function am(am_last) {
+            if(am_last == 1) {
+                alert("Ваша сумма в " + amount + " рубль успешно зачислена")
+            } else if(am_last > 1 && am_last <= 4) {
+                alert("Ваша сумма в " + amount + " рубля успешно зачислена")
+            } else if(am_last > 4 || am_last == 0 ) {
+                alert("Ваша сумма в " + amount + " рублей успешно зачислена")
+            }
+        }
+        
+        am(Number(amount_last))
+
+	</script>
+</body>
+</html>

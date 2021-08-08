@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+    <link rel="stylesheet" href="homeworks.css">
+</head>
+<body>
+	<script>
+		"use strict";
+		
+        function plus(number1, number2) {
+        return number1 + number2;
+        }
+
+        function minus(number1, number2) {
+        return number1 - number2;
+        }
+
+        function division(number1, number2) {
+        return number1 / number2;
+        }
+
+        function multiplication(number1, number2) {
+        return number1 * number2;
+        }
+
+        function  mathOperation(arg1, arg2, operation) {
+            switch(operation) {
+                case "+" :
+                    return plus(arg1, arg2);
+
+                case "-" :
+                    return minus(arg1, arg2);
+
+                case "/" :
+                    return division(arg1, arg2);
+
+                case "*" :
+                    return multiplication(arg1, arg2);
+            }
+        }
+
+        // Я сделала функцию с пользовательским вводом чисел и операции
+
+        let arg1 = +prompt("First number");
+        let arg2 = +prompt("Second number");
+        let operation = prompt("Action");
+
+        alert(mathOperation(arg1, arg2, operation))
+	</script>
+</body>
+</html>
