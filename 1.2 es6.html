@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homework</title>
+    <link rel="stylesheet" href="homeworks.css">
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        class Post {
+            constructor(autor, text, date) {
+                this.autor = autor;
+                this.text = text;
+                this.date = date;
+            }
+
+            edit(text) {
+                this.text = text
+            }
+        }
+
+        const post1 = new Post('jane', 'Hello', new Date());
+        console.log(post1);
+        post1.edit('Hi');
+        console.log(post1);
+
+        class AttachedPost extends Post {
+            constructor(autor, text, date) {
+                super(autor, text, date);
+                this.highlighted = false;
+            }
+
+            makeTextHighlighted() {
+                this.highlighted = true;
+            }
+        }
+
+        const attached1 = new AttachedPost('alex', 'Hi', new Date());
+        console.log(attached1);
+        attached1.makeTextHighlighted();
+        attached1.edit('Hello');
+        console.log(attached1);
+
+    </script>
+</body>
+
+</html>

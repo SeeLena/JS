@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homework</title>
+    <link rel="stylesheet" href="homeworks.css">
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        function Product (name, price){
+            this.name = name;
+            this.price = price;
+        }
+
+        Product.prototype. make25PercentDiscount = function () {
+            this.price = this.price - (this.price / 100 * 25);
+        };
+
+        const product1 = new Product('Product 1', 100);
+        product1.make25PercentDiscount();
+
+        console.log(product1);
+
+    </script>
+</body>
+
+</html>
